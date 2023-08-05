@@ -19,4 +19,7 @@ func SetupRoutes(db *gorm.DB, gin *gin.Engine) {
 	docs.SwaggerInfo.BasePath = "/api/"
 	swaggerRoute.GET("/", RedirectToDocs)
 	swaggerRoute.GET("/docs/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
+
+	quizRoute := gin.Group("/api/quizzes")
+	QuizCRUDRouter(db, quizRoute)
 }
