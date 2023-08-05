@@ -1,0 +1,19 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go specific
+*.o
+*.a
+*.test
+
+# Ignore the generated binaries
+/bin/
+
+# Ignore any generated documentation
+/doc/
+tmp/
+.env
