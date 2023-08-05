@@ -14,13 +14,13 @@ To get started with the Quiz Test RESTful API, follow the instructions below:
 Clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/your-username/quiz-test-rest-api.git
+git clone https://github.com/BaseMax/QuizTestAPIGo.git
 ```
 
 Change into the project directory.
 
 ```bash
-cd quiz-test-rest-api
+cd QuizTestAPIGo
 ```
 
 Install the required dependencies.
