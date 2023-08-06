@@ -22,4 +22,5 @@ func SetupRoutes(db *gorm.DB, gin *gin.Engine) {
 
 	quizRoute := gin.Group("/api/quizzes")
 	QuizCRUDRouter(db, quizRoute)
+	QuestionCRUDRouter(db, quizRoute)
 }

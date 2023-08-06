@@ -10,9 +10,9 @@ import (
 func QuizCRUDRouter(db *gorm.DB, r *gin.RouterGroup) {
 	quizRepo := repository.QuizRepositoryImpl(db)
 	quizController := &controllers.QuizController{Service: quizRepo}
-	r.POST("/", quizController.CreateQuizHandler)
-	r.GET("/:id", quizController.GetQuizByIDHandler)
 	r.GET("/", quizController.GetAllQuizzesHandler)
-	r.DELETE("/:id", quizController.DeleteQuizHandler)
+	r.GET("/:id", quizController.GetQuizByIDHandler)
+	r.POST("/", quizController.CreateQuizHandler)
 	r.PUT("/:id", quizController.UpdateQuizHandler)
+	r.DELETE("/:id", quizController.DeleteQuizHandler)
 }
